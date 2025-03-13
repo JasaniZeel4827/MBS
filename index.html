@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Ticket Booking</title>
+  </head>
+  <body>
+    <!--Movie select option-->
+    <div class="movie-container">
+      <label> Select a movie:</label>
+      <select id="movie">
+        <option value="400">Avengers: Endgame (RS.400)</option>
+        <option value="250">Black Panther: Wakanda Forever (RS.250)</option>
+        <option value="250">Guardians of the Galaxy Vol. 3 (RS.250)</option>
+        <option value="300">Thor: Love and Thunder (RS.300)</option>
+        <option value="200">Iron Man (RS.200)</option>
+        <option value="250">Spider-Man: No Way Home (RS.250)</option>
+        <option value="220">Doctor Strange in the Multiverse of Madness (RS.220)</option>
+        
+        <option value="200">Wonder Woman 1984 (RS.200)</option>
+        <option value="300">The Batman (RS.300)</option>
+        <option value="225">Justice League (RS.225)</option>
+        <option value="250">Aquaman (RS.250)</option>
+        <option value="200">Shazam! (RS.200)</option>
+        <option value="220">The Suicide Squad (RS.220)</option>
+        <option value="240">Black Adam (RS.240)</option>
+        
+        <option value="150">The Super Mario Bros. Movie (RS.150)</option>
+        <option value="200">Jurassic World (RS.200)</option>
+        <option value="100">The Devil Wears Prada (RS.100)</option>
+        <option value="250">Inception (RS.250)</option>
+        <option value="200">The Matrix (RS.200)</option>
+        <option value="180">The Shawshank Redemption (RS.180)</option>
+        <option value="230">Forrest Gump (RS.230)</option>
+        
+        <option value="149">Stranger Things (RS.149/month for mobile-only plan)</option>
+        <option value="199">Money Heist (RS.199/month for basic plan)</option>
+        <option value="499">Squid Game (RS.499/month for standard plan)</option>
+        <option value="649">The Witcher (RS.649/month for premium plan)</option>
+        <option value="149">Bridgerton (RS.149/month for mobile-only plan)</option>
+        <option value="299">The Crown (RS.299/month)</option>
+        <option value="249">Dark (RS.249/month)</option>
+        
+        <option value="299">The Boys (RS.299/month)</option>
+        <option value="299">The Marvelous Mrs. Maisel (RS.299/month)</option>
+        <option value="299">Reacher (RS.299/month)</option>
+        <option value="299">Jack Ryan (RS.299/month)</option>
+        <option value="299">The Expanse (RS.299/month)</option>
+        <option value="279">Good Omens (RS.279/month)</option>
+        <option value="259">The Man in the High Castle (RS.259/month)</option>
+        
+      </select>
+    </div>
+
+    <!--Showcase-->
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+
+    <!--Main Container-->
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
